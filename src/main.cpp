@@ -1,18 +1,26 @@
 #include <Arduino.h>
 
+#define analogPin 0
+#define chargePin 13
+#define dischargePin 11
+#define resistorValue 10000.0F
+
 // put function declarations here:
 int myFunction(int, int);
 
-void setup() {
+void setup()
+{
   // put your setup code here, to run once:
   int result = myFunction(2, 3);
 }
 
-void loop() {
+void loop()
+{
   // put your main code here, to run repeatedly:
 }
 
 // put function definitions here:
-int myFunction(int x, int y) {
+int myFunction(int x, int y)
+{
   return x + y;
 }
